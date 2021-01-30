@@ -6,18 +6,22 @@
 
 body {
     background-color: #d9dcd6;
+    background-size: initial;
+    font-stretch: initial;
 }
 
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-display: block;
     background-color: #2a607c;
-    color: #ffffff;
+    color: #ffffff;   
 }
 
-.header h1 {
+.header h1 {     
     display: inline-block;
-    font-size: 48px;
+    display: flexbox;
+    font-size-adjust: inherit;   
 }
 
 .header h1 .seo {
@@ -25,11 +29,10 @@ body {
 }
 
 .header nav {
-    padding-top: 15px;
-    margin-right: 20px;
+    padding-top: 15px;    
+    margin-right: 5px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
 }
 
 .header nav ul {
@@ -38,12 +41,13 @@ body {
 
 .header nav ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 25px;    
+    position: relative;
 }
 
 a {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 p {
@@ -51,8 +55,10 @@ p {
 }
 
 .hero {
-    height: 800px;
-    width: 100%;
+    position:relative;    
+    height: 500px;    
+    max-height: min-content;
+    width: auto;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
@@ -137,16 +143,16 @@ p {
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 370px;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
     background-color: #0072bb;
     color: #ffffff;
 }
 
 .online-reputation-management {
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    padding: 40px;
+    height: 370px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
@@ -155,8 +161,8 @@ p {
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 370px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
     background-color: #0072bb;
     color: #ffffff;
 }
@@ -175,17 +181,18 @@ p {
 
 .search-engine-optimization h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 20px;
 }
 
 .online-reputation-management h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 20px;
 }
 
 .social-media-marketing h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 20px;
+    
 }
 
 .footer {
@@ -197,4 +204,10 @@ p {
 
 .footer h2 {
     font-size: 20px;
+}
+
+@media (min-width: 950px) {
+    .header nav ul {
+        grid-template-columns:(2, 1fr);
+    }
 }
