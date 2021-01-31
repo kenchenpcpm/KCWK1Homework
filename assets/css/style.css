@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 
 body {
@@ -75,7 +75,7 @@ p {
     margin-left: 25px;
 }
 
-.content {
+.detail {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
