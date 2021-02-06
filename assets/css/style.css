@@ -67,6 +67,14 @@ p {
     background-position: center;
 }
 
+/*rename content to detail, make myself more easier to understand the structure*/
+/*move .detail upper befre float left and right*/
+.detail {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -75,13 +83,6 @@ p {
 .float-right {
     float: right;
     margin-left: 25px;
-}
-
-/*rename content to detail, make myself more easier to understand the structure*/
-.detail {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
 }
 
 .benefits {    
