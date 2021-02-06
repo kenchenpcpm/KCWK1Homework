@@ -58,13 +58,9 @@ p {
     font-size: 16px;
 }
 
-.hero {
-    /*adding position relative (line 62)*/
-    position: relative;        
-    height: 800px;    
-    max-height: min-content;
-    /*line 66 ot have the pic width auto adjust when the browser resized*/
-    width: auto;
+.hero {    
+    height: 800px;
+    width: 100%;       
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
@@ -188,17 +184,17 @@ p {
 
 .search-engine-optimization h2 {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 36px;
 }
 
 .online-reputation-management h2 {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 36px;
 }
 
 .social-media-marketing h2 {
     margin-bottom: 20px;
-    font-size: 20px;    
+    font-size: 36px;    
 }
 
 .footer {
