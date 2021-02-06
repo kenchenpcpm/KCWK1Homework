@@ -6,5 +6,5 @@ Week 1 Homework</br>
 -Input: header, nav, main, article, section, aside<br/>
 -GitHub url= https://github.com/kenchenpcpm/KCWK1Homework/<br/>
 -Gitpage url= https://kenchenpcpm.github.io/KCWK1Homework/<br/>
-<img src="assets/images/Screenshot1.JPG" width="700"><br/>
-<img src="assets/images/Screenshot2.JPG" width="700"><br/>
+<img src="assets/images/Screenshot.JPG" width="700"><br/>
+
